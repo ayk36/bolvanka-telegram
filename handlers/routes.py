@@ -10,5 +10,5 @@ async def start(message: Message):
     await message.answer("Эта команда реагирует только на /start")
 
 @router.message()
-async def start(message: Message):
+async def all_message(message: Message):
     await message.answer("Эта команда реагирует на все сообщения")
